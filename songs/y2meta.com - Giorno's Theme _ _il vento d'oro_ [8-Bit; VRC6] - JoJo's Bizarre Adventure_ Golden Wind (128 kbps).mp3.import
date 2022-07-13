@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/y2meta.com - Giorno's Theme _ _il vento d'oro_ [8-Bit; VRC6] - JoJo's Bizarre Adventure_ Golden Wind (128 kbps).mp3-613194427e4bad377e2ba823e8bb787d.mp3str"
+
+[deps]
+
+source_file="res://songs/y2meta.com - Giorno's Theme _ _il vento d'oro_ [8-Bit; VRC6] - JoJo's Bizarre Adventure_ Golden Wind (128 kbps).mp3"
+dest_files=[ "res://.import/y2meta.com - Giorno's Theme _ _il vento d'oro_ [8-Bit; VRC6] - JoJo's Bizarre Adventure_ Golden Wind (128 kbps).mp3-613194427e4bad377e2ba823e8bb787d.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

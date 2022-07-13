@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/xDeviruchi - Exploring The Unknown.wav-2f6b167b7a1ca8b41ef5b78c76061f2b.sample"
+
+[deps]
+
+source_file="res://songs/xDeviruchi - Exploring The Unknown.wav"
+dest_files=[ "res://.import/xDeviruchi - Exploring The Unknown.wav-2f6b167b7a1ca8b41ef5b78c76061f2b.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0
