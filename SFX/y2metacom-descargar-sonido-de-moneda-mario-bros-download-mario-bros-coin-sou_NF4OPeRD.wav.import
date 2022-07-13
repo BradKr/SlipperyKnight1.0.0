@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/y2metacom-descargar-sonido-de-moneda-mario-bros-download-mario-bros-coin-sou_NF4OPeRD.wav-0684a0b9d8a0faa3dcf4daa4e7390108.sample"
+
+[deps]
+
+source_file="res://SFX/y2metacom-descargar-sonido-de-moneda-mario-bros-download-mario-bros-coin-sou_NF4OPeRD.wav"
+dest_files=[ "res://.import/y2metacom-descargar-sonido-de-moneda-mario-bros-download-mario-bros-coin-sou_NF4OPeRD.wav-0684a0b9d8a0faa3dcf4daa4e7390108.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

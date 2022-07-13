@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/y2meta.com-Descargar-sonido-de-moneda-Mario-bros-__-Download-Mario-Bros-Coin-sound-_320-kbps_.wav-8ddd4d743f42d9a095985073b92bfd7f.sample"
+
+[deps]
+
+source_file="res://SFX/y2meta.com-Descargar-sonido-de-moneda-Mario-bros-__-Download-Mario-Bros-Coin-sound-_320-kbps_.wav"
+dest_files=[ "res://.import/y2meta.com-Descargar-sonido-de-moneda-Mario-bros-__-Download-Mario-Bros-Coin-sound-_320-kbps_.wav-8ddd4d743f42d9a095985073b92bfd7f.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

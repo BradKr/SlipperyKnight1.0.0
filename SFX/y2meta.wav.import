@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/y2meta.wav-463e052501f2a9ab5d369ace261720d0.sample"
+
+[deps]
+
+source_file="res://SFX/y2meta.wav"
+dest_files=[ "res://.import/y2meta.wav-463e052501f2a9ab5d369ace261720d0.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0
