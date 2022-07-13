@@ -1,0 +1,118 @@
+[gd_scene load_steps=12 format=2]
+
+[ext_resource path="res://font/3Dventure.ttf" type="DynamicFontData" id=1]
+[ext_resource path="res://escenas/menu2.tres" type="DynamicFont" id=2]
+[ext_resource path="res://fondo/995128.jpg" type="Texture" id=3]
+[ext_resource path="res://scripts/menu.gd" type="Script" id=4]
+[ext_resource path="res://songs/y2meta.com - Giorno's Theme _ _il vento d'oro_ [8-Bit; VRC6] - JoJo's Bizarre Adventure_ Golden Wind (128 kbps).mp3" type="AudioStream" id=5]
+[ext_resource path="res://font/Minecraft.ttf" type="DynamicFontData" id=6]
+[ext_resource path="res://Sprite_Pack/sonido.png" type="Texture" id=7]
+
+[sub_resource type="DynamicFont" id=1]
+size = 150
+font_data = ExtResource( 1 )
+
+[sub_resource type="DynamicFont" id=2]
+font_data = ExtResource( 1 )
+
+[sub_resource type="DynamicFont" id=3]
+font_data = ExtResource( 6 )
+
+[sub_resource type="DynamicFont" id=4]
+font_data = ExtResource( 6 )
+
+[node name="Menu" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 4 )
+
+[node name="Sprite" type="Sprite" parent="."]
+modulate = Color( 0.533333, 0.533333, 0.533333, 1 )
+self_modulate = Color( 0.956863, 0.690196, 0.690196, 1 )
+position = Vector2( 993, 172 )
+scale = Vector2( 1.13925, 1.12634 )
+texture = ExtResource( 3 )
+offset = Vector2( 0, -72.3589 )
+
+[node name="Sprite2" type="Sprite" parent="."]
+modulate = Color( 0.533333, 0.533333, 0.533333, 1 )
+self_modulate = Color( 0.956863, 0.690196, 0.690196, 1 )
+position = Vector2( 985, 1386 )
+scale = Vector2( 1.14472, 1.14472 )
+z_index = -1
+texture = ExtResource( 3 )
+offset = Vector2( 0, -72.3589 )
+
+[node name="VBoxBototnes" type="VBoxContainer" parent="."]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -294.0
+margin_top = 193.0
+margin_right = 250.0
+margin_bottom = 485.0
+
+[node name="PLAY" type="Button" parent="VBoxBototnes"]
+margin_right = 544.0
+margin_bottom = 148.0
+custom_fonts/font = SubResource( 1 )
+text = "PLAY"
+flat = true
+
+[node name="SALIR" type="Button" parent="VBoxBototnes"]
+margin_top = 152.0
+margin_right = 544.0
+margin_bottom = 238.0
+custom_fonts/font = ExtResource( 2 )
+text = "SALIR"
+flat = true
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 5 )
+autoplay = true
+
+[node name="title" type="Label" parent="."]
+margin_left = 193.0
+margin_top = 496.0
+margin_right = 345.0
+margin_bottom = 518.0
+rect_scale = Vector2( 10, 10 )
+custom_fonts/font = SubResource( 2 )
+text = "slippery knight"
+
+[node name="HSlider" type="HSlider" parent="."]
+margin_left = 1603.0
+margin_top = 841.0
+margin_right = 1866.0
+margin_bottom = 875.0
+rect_scale = Vector2( 1, 3 )
+min_value = -50.0
+max_value = 0.0
+
+[node name="volumen" type="Label" parent="."]
+margin_left = 1649.0
+margin_top = 838.0
+margin_right = 1753.0
+margin_bottom = 857.0
+rect_scale = Vector2( 2, 2 )
+custom_fonts/font = SubResource( 3 )
+text = "VOLUMEN"
+
+[node name="Sprite3" type="Sprite" parent="."]
+position = Vector2( 1562, 891 )
+scale = Vector2( 0.0824999, 0.09 )
+texture = ExtResource( 7 )
+
+[node name="version" type="Label" parent="."]
+margin_left = 4.0
+margin_top = 949.0
+margin_right = 65.0
+margin_bottom = 965.0
+rect_scale = Vector2( 2, 2 )
+custom_fonts/font = SubResource( 4 )
+text = "Alpha1.0"
+
+[connection signal="pressed" from="VBoxBototnes/PLAY" to="." method="_on_PLAY_pressed"]
+[connection signal="pressed" from="VBoxBototnes/SALIR" to="." method="_on_SALIR_pressed"]
+[connection signal="value_changed" from="HSlider" to="." method="_on_HSlider_value_changed"]

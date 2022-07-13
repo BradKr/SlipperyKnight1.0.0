@@ -1,0 +1,86 @@
+[gd_scene load_steps=13 format=2]
+
+[ext_resource path="res://Sprite_Pack/2x/pause.png" type="Texture" id=1]
+[ext_resource path="res://scripts/Boton_de_pausa.gd" type="Script" id=2]
+[ext_resource path="res://scripts/Control.gd" type="Script" id=3]
+[ext_resource path="res://font/Minecraft.ttf" type="DynamicFontData" id=4]
+[ext_resource path="res://Sprite_Pack/2x/return.png" type="Texture" id=5]
+[ext_resource path="res://Sprite_Pack/2x/exit.png" type="Texture" id=6]
+
+[sub_resource type="DynamicFont" id=1]
+font_data = ExtResource( 4 )
+
+[sub_resource type="StyleBoxFlat" id=4]
+bg_color = Color( 0.168627, 0.00392157, 0.423529, 1 )
+
+[sub_resource type="StyleBoxFlat" id=5]
+bg_color = Color( 0.462745, 0, 0.639216, 1 )
+
+[sub_resource type="DynamicFont" id=2]
+font_data = ExtResource( 4 )
+
+[sub_resource type="StyleBoxFlat" id=3]
+bg_color = Color( 0.168627, 0.00392157, 0.423529, 1 )
+
+[sub_resource type="StyleBoxFlat" id=6]
+bg_color = Color( 0.462745, 0, 0.639216, 1 )
+
+[node name="Pausa" type="Node"]
+
+[node name="Control" type="Control" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 3 )
+
+[node name="Boton_de_pausa" type="TextureButton" parent="Control"]
+pause_mode = 2
+anchor_left = 0.5
+anchor_right = 0.5
+margin_left = -50.0
+margin_right = 50.0
+margin_bottom = 100.0
+texture_normal = ExtResource( 1 )
+script = ExtResource( 2 )
+
+[node name="Efecto" type="Tween" parent="Control"]
+pause_mode = 2
+
+[node name="botones" type="Control" parent="Control"]
+margin_right = 40.0
+margin_bottom = 40.0
+
+[node name="Continuar" type="Button" parent="Control/botones"]
+pause_mode = 2
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -337.5
+margin_top = 480.0
+margin_right = -86.5
+margin_bottom = 560.0
+custom_fonts/font = SubResource( 1 )
+custom_styles/hover = SubResource( 4 )
+custom_styles/normal = SubResource( 5 )
+text = "Continuar"
+icon = ExtResource( 5 )
+
+[node name="Salir" type="Button" parent="Control/botones"]
+pause_mode = 2
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -338.0
+margin_top = 606.5
+margin_right = -86.0
+margin_bottom = 712.5
+custom_fonts/font = SubResource( 2 )
+custom_styles/hover = SubResource( 3 )
+custom_styles/normal = SubResource( 6 )
+text = "Salir"
+icon = ExtResource( 6 )
+
+[connection signal="pressed" from="Control/Boton_de_pausa" to="Control" method="_on_Boton_de_pausa_pressed"]
+[connection signal="pressed" from="Control/botones/Continuar" to="Control" method="_on_Continuar_pressed"]
+[connection signal="pressed" from="Control/botones/Salir" to="Control" method="_on_Salir_pressed"]
